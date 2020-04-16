@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Percentage Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+	<img class="wave" src="img/wave.png">
+	<div class="main-container">
+		<div class="img">
+			<img src="img/background.svg">
+		</div>
+		
+		<div class="information-content" id="information">
+			
+			<form >
+				<h2 class="title">Information</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>University/College Name</h5>
+           		   		<input type="text" class="input" name="UniversityCollegeName">
+           		   </div>
+           		</div>
+           		<div class="input-div two">
+           		   <div class="i"> 
+           		    	<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Registration Number</h5>
+           		    	<input type="number" class="input" name="RegistrationNumber">
+            	   </div>
+				</div>
+				<div class="input-div three">
+					<div class="i"> 
+						 <i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						 <h5>Branch</h5>
+						 <input type="text" class="input" name="Branch">
+				 </div>
+			  </div>
+			  <div class="input-div four">
+				<div class="i"> 
+					 <i class="fas fa-user"></i>
+				</div>
+				<div class="div">
+					 <h5>College Year</h5>
+					 <input type="text" class="input" name="CollegeYear">
+			 </div>
+		  </div >
+				<input class="btn" id="next" value="Next" type="reset">
+			</form>
+		</div>
+		<div class="information-content" id="calculator">
+			<h2 class="title" id="calculator-title">Calculator</h2>
+			<form id="calculator-form" >
+				<div class="input-div five focus">
+					<div class="i"> 
+						 <i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						 <h5>Subject Name</h5>
+						 <select id="select" name="SubjectName">
+							<option value="English" class="option">English</option>
+							<option value="Hindi" class="option">Hindi</option>
+							<option value="Calculus" class="option">Calculus</option>
+							<option value="Programming" class="option">Introduction to computer programming</option>
+							<option value="Economics" class="option">Economics</option>
+							<option value="Chemistry" class="option">Chemistry I</option>
+							<option value="Algebra" class="option">Linear Algebra and Ordinary Differential Equations</option>
+							<option value="Physics" class="option">Modern Physics</option>
+							<option value="Analysis" class="option">Data Analysis and Interpretation</option>
+							<option value="Graphics" class="option">Engineering Graphics and Drawing</option>
+							<option value="Environmental" class="option">Environmental  Studies </option>
+							<option value="Automata" class="option">Automata Theory and Logic</option>
+							<option value="DesignAlgo" class="option">Design and Analysis of Algorithms</option>
+							<option value="DataStructure" class="option">Data Structures and Algorithms</option>
+							<option value="Psychology" class="option">Literature/Philosophy/Psychology/Sociology</option>
+							<option value="AI" class="option">Artificial Intelligence</option>
+							<option value="Architecture" class="option">Computer Architecture</option>
+							<option value="OS" class="option">Operating Systems</option>
+							<option value="Networks" class="option">Computer Networks</option>
+							<option value="ProgrammingLang" class="option">Implementation of Programming Languages</option>
+							<option value="Database" class="option">Database and Information Systems</option>
+						 </select>
+				 </div>
+			  </div >
+			  <div class="input-div six">
+				<div class="i"> 
+					 <i class="fas fa-user"></i>
+				</div>
+				<div class="div">
+					 <h5>Marks Obtain</h5>
+					 <input type="number" class="input" min="0" max="100" name="MarksObtain">
+			 </div>
+		  </div >
+		  <div class="input-div seven">
+			<div class="i"> 
+				 <i class="fas fa-user"></i>
+			</div>
+			<div class="div">
+				 <h5>Out of Marks</h5>
+				 <input type="number" class="input" min="1" max="100" name="OutOfMarks">
+		 </div>
+	  </div >
+	  <div style="display: flex; width:510px; margin-top: -20px;">
+	  <input class="btn" id="Add-Subject" value="Add Subject" style="width:250px;" type="reset">
+	  <input class="btn" id="Back" value="Back"style="width:250px; margin-left:10px" type="reset">
+	  </div>
+	  <div id="table-div">
+		<table id="table">
+			<tr>
+			  <td >Subject Name</td>
+			  <td >Marks Obtain</td> 
+			  <td >Out Of Marks</td>
+			</tr>
+		  </table>
+		</div>
+		<div style="display: flex;margin-top: -5px;">
+		<input class="btn" id="Percentage" style="width:250px;" type="" value="Percentage">
+		<div class="btn" id="Percentage-result" style="width:250px; margin-left:10px;padding-top: 10px;color: black;" name="PercentageResult" ></div>
+		</div>
+		</form>
+		</div>
+	</div>
+	
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
